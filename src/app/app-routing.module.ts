@@ -12,8 +12,13 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'my-custom',
-    loadChildren: () => import('./my-custom/my-custom.module').then( m => m.MyCustomPageModule)
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  
+  {
+    path: 'show-objects',
+    loadChildren: () => import('./show-objects/show-objects.module').then( m => m.ShowObjectsPageModule)
   },
 ];
 
