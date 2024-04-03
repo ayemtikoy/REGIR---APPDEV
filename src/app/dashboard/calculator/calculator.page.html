@@ -4,3 +4,84 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content class="ion-padding">
+
+  
+  <div class="calc-display">
+    <ion-text [class.error]="hasError">{{display}}</ion-text>
+  </div>
+
+
+
+  <ion-label>History</ion-label>
+
+
+
+  <div class="calc-display">
+    <ion-text [class.error]="hasError">{{history}}</ion-text>
+  </div>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col size="3">
+        <ion-button expand="block" color="medium" (click)="handleInput('1')">1</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="medium" (click)="handleInput('2')">2</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="medium" (click)="handleInput('3')">3</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="primary" class="button" (click)="handleInput('-')">-</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="3">
+        <ion-button expand="block" color="medium" (click)="handleInput('4')">4</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="medium" (click)="handleInput('5')">5</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="medium" (click)="handleInput('6')">6</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="primary" class="button" (click)="handleInput('*')">*</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="3">
+        <ion-button expand="block" color="medium" (click)="handleInput('7')">7</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="medium" (click)="handleInput('8')">8</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="medium" (click)="handleInput('9')">9</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="primary" class="button" (click)="handleInput('/')">/</ion-button>
+      </ion-col>
+    </ion-row>
+
+   
+    <ion-row>
+      <ion-col size="3">
+        <ion-button expand="block" color="danger" class="button" (click)="handleInput('C')">C</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="medium" (click)="handleInput('0')">0</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="dark" class="button" (click)="handleInput('=')">=</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" color="primary" class="button" (click)="handleInput('+')">+</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
