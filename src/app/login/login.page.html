@@ -1,0 +1,15 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>LOG-IN PAGE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h4>PLEASE LOG-IN</h4>
+  <ion-input label="Username" label-placement="floating" fill="solid" type="text" [(ngModel)]="username"
+    class="input"></ion-input>
+  <ion-input label="Password" label-placement="floating" fill="solid" type="password" [(ngModel)]="password"
+    class="input"></ion-input>
+  <ion-button (click)="loginPage()" class="button">Login</ion-button>
+
+</ion-content>

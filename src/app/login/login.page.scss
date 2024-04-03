@@ -1,0 +1,47 @@
+.button {
+    margin: 20px;
+    width: 100%;
+}
+
+
+h1 {
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    word-spacing: 10px;
+}
+
+h1 span {
+    letter-spacing: 15px;
+    display: block;
+    margin-top: 10px;
+    font-size: 150%;
+}
+
+ion-content {
+    text-align: center;
+}
+
+.button {
+    margin: 20px auto;
+    width: 50%;
+    height: 6%;
+    max-width: 200px;
+    --ion-color-primary: rgb(218, 221, 45);
+}
+
+.input {
+    margin-top: 20px;
+    color: #212121;
+    width: 70%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    text-align: left !important;
+}
+
+.left-align {
+    text-align: left !important;
+    margin-left: 20px !important;
+    padding-left: 0 !important;
+}

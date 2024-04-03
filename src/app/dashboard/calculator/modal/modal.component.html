@@ -1,0 +1,57 @@
+<div style="text-align: center;">
+    <ion-card-content [class.small-content]="isSmall">
+        
+        
+
+  
+          <div class="ion-text-center ion-padding">
+            <ion-button color="primary">Primary Button</ion-button>
+            <ion-button color="secondary">Secondary Button</ion-button>
+            <ion-button color="danger">Danger Button</ion-button>
+          
+            <ion-button color="warning" (click)="alert()">Alert</ion-button>
+            <ion-button color="light" (click)="presentToast()">Toast</ion-button>
+            <ion-button color="dark" (click)="dismissToast()">Dismiss Toast</ion-button>
+  
+          
+            <ion-toggle [(ngModel)]="condition"></ion-toggle>
+    
+          
+            <ion-list>
+              <ion-item>
+                Christian
+              </ion-item>
+              <ion-item>
+                Mark
+              </ion-item>
+              <ion-item>
+                Ian
+              </ion-item>
+              <ion-item>
+                MJ
+              </ion-item>
+            </ion-list>
+          </div>
+           
+          <ion-fab id="fab" vertical="bottom" horizontal="end">
+            <ion-fab-button>
+              <ion-icon name="add"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-list side="top">
+              <ion-fab-button
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></ion-fab-button>
+              <ion-fab-button><ion-icon name="logo-twitter"></ion-icon>
+              </ion-fab-button>
+              <ion-fab-button>
+                <ion-icon name="logo-instagram"></ion-icon>
+            </ion-fab-button>
+            </ion-fab-list>
+          </ion-fab>
+        
+            
+           
+
+    </ion-card-content>
+</div>
+<ion-button class="cbutton"(click)="closeModal()">Close</ion-button>
