@@ -1,20 +1,63 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-button (click)="logout()" expand="block" shape="round" color="danger">Log Out</ion-button>
+
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+          <h1 class="">User Details</h1>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+        <ion-item>
+          <ion-input type="text" placeholder="" label="Full Name:" [(ngModel)]="user.user_name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="text" placeholder="" label="Nickname:" [(ngModel)]="user.user_nickname"
+            [clearOnEdit]="true"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="text" placeholder="" label="Gender:" [(ngModel)]="user.user_gender"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="text" placeholder="" label="Hobby:" [(ngModel)]="user.user_hobby"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-input type="text" placeholder="" label="Crush Name:" [(ngModel)]="user.user_crushName"></ion-input>
+        </ion-item>
+       
+      <ion-button (click)="createUser()" shape="round">Save</ion-button>
+
+  </ion-grid>
+
+  
+
+  <h1 class="">User Information</h1>
+
+
+  <ion-item>
+    <ion-input type="text" placeholder="" label="Full Name :" [(ngModel)]="user.user_name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="text" placeholder="" label="Nickname :"[(ngModel)]="user.user_nickname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="text" placeholder="" label="Gender :" [(ngModel)]="user.user_gender"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="text" placeholder="" label="Hobby :"[(ngModel)]="user.user_hobby"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="" label="Crush Name :" [(ngModel)]="user.user_crushName"></ion-input>
+  </ion-item>
+
+
+
+<ion-button (click)=" save()" shape="round" color="success">Save</ion-button>
+
+<ion-button (click)="confirmDelete(user)" shape="round" color="danger">Delete</ion-button>
+
 </ion-content>
